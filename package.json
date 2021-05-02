@@ -1,0 +1,81 @@
+{
+  "name": "hsb_web_zyb",
+  "description": "回收宝小站专业版H5",
+  "version": "1.0.0",
+  "projectType": "h5",
+  "author": "lindingfeng",
+  "deployName": "hsb_web_zyb",
+  "private": true,
+  "scripts": {
+    "dev": "hsbvue dev NODE_ENV=development",
+    "build": "hsbvue build",
+    "build:test": "hsbvue build --env=test",
+    "devops": "hsb-devops-move init",
+    "devops-key": "hsb-devops-move init -k OeOPC8dW"
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "@antv/f2": "^3.8.0",
+    "@babel/runtime-corejs3": "^7.12.5",
+    "@hsb/vue": "git+https://lindingfeng:wsjj003.@github.com/lindingfeng/hsb_vue.git",
+    "axios": "^0.21.0",
+    "better-scroll": "^2.0.5",
+    "clipboard": "^2.0.6",
+    "crypto-js": "3.3.0",
+    "dayjs": "^1.9.6",
+    "es6-promise": "^4.2.8",
+    "fastclick": "^1.0.6",
+    "html2canvas": "1.0.0-rc.4",
+    "ismobilejs": "^1.1.1",
+    "js-cookie": "^2.2.1",
+    "js-md5": "^0.7.3",
+    "jsbarcode": "^3.11.3",
+    "lodash": "^4.17.20",
+    "mint-ui": "^2.2.13",
+    "mobile-detect": "^1.4.3",
+    "normalize.css": "^8.0.1",
+    "nprogress": "^0.2.0",
+    "only": "^0.0.2",
+    "promise-polyfill": "^8.2.0",
+    "qrcode": "^1.4.4",
+    "sha1": "^1.1.1",
+    "swiper": "^6.5.7",
+    "url-parse": "^1.4.7",
+    "validator": "^13.1.17",
+    "vant": "^2.10.13",
+    "vue": "2.6.10",
+    "vue-amap": "^0.5.10",
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-i18n": "^8.22.2",
+    "vue-infinite-loading": "^2.4.5",
+    "vue-lazyload": "^1.3.3",
+    "vue-router": "3.0.2",
+    "vue-scroller": "^2.2.4",
+    "vue-scrollto": "^2.20.0",
+    "vue-wechat-title": "^2.0.7",
+    "vuex": "3.5.1"
+  },
+  "devDependencies": {
+    "babel-plugin-component": "^1.1.1",
+    "babel-plugin-import": "^1.13.1",
+    "babel-plugin-lodash": "^3.3.4",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "page-skeleton-webpack-plugin": "^0.10.12",
+    "vconsole": "^3.3.4"
+  },
+  "engines": {
+    "node": ">= 10.16.0",
+    "npm": ">= 6.9.0"
+  }
+}
