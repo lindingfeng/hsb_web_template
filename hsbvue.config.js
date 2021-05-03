@@ -35,9 +35,11 @@ module.exports = {
         open: false
       }
     } else {
-      config.output = {
-        ...config.output,
-        publicPath: `//s1.huishoubao.com/${package.deployName}/dist/`
+      if (package.deployName) {
+        config.output = {
+          ...config.output,
+          publicPath: `//s1.huishoubao.com/${package.deployName}/dist/`
+        }
       }
     }
     return config;

@@ -1,17 +1,15 @@
 {
-  "name": "hsb_web_zyb",
-  "description": "回收宝小站专业版H5",
+  "name": "hsb",
+  "description": "hsb project",
   "version": "1.0.0",
-  "projectType": "h5",
-  "author": "lindingfeng",
-  "deployName": "hsb_web_zyb",
+  "projectType": "",
+  "author": "",
+  "deployName": "",
   "private": true,
   "scripts": {
     "dev": "hsbvue dev NODE_ENV=development",
     "build": "hsbvue build",
-    "build:test": "hsbvue build --env=test",
-    "devops": "hsb-devops-move init",
-    "devops-key": "hsb-devops-move init -k OeOPC8dW"
+    "build:test": "hsbvue build --env=test"
   },
   "lint-staged": {
     "src/**/*.{js,vue}": [
@@ -33,6 +31,7 @@
     "clipboard": "^2.0.6",
     "crypto-js": "3.3.0",
     "dayjs": "^1.9.6",
+    "element-ui": "^2.15.1",
     "es6-promise": "^4.2.8",
     "fastclick": "^1.0.6",
     "html2canvas": "1.0.0-rc.4",
