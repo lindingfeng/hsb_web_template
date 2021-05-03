@@ -14,7 +14,7 @@ module.exports = {
     ]
   },
   extra: {
-    usePx2rem: true, // 是否启用px2rem
+    usePx2rem: false, // 是否启用px2rem
     usePostCSS: true, // 是否启用postCss
     useExtractCSS: true, // 是否抽离css
   },
