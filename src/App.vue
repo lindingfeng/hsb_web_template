@@ -17,9 +17,7 @@ export default {
       activeDate: Date.now().toString().slice(0, 10),
       transitionName: 'fade'
     };
-  },
-  mounted () {},
-  methods: {}
+  }
 };
 </script>
 

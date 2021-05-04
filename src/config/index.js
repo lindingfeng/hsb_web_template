@@ -1,3 +1,5 @@
+export const pid = '1426';
+export const channelId = '10000180';
 export const apiHost = 'https://api.huishoubao.com';
 export const gdHost = 'https://restapi.amap.com/v3';
 // 高德web端key
