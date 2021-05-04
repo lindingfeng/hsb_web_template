@@ -105,3 +105,28 @@ export const randomWord = (randomFlag, min, max) => {
   }
   return str;
 };
+
+/*
+ * @desc: 动态引入script跨域
+*/
+export const createJsCrossOrigin = (url, callback) => {
+  let script = document.createElement('script');
+  script.crossOrigin = 'true';
+  script.type = 'text/javascript';
+  if (typeof callback !== 'undefined') {
+    if (script.readyState) {
+      script.onreadystatechange = function () {
+        if (script.readyState === 'loaded' || script.readyState === 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else {
+      script.onload = function () {
+        callback();
+      };
+    }
+  }
+  script.src = url;
+  document.body.appendChild(script);
+};
