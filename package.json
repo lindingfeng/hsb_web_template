@@ -25,7 +25,7 @@
   "dependencies": {
     "@antv/f2": "^3.8.0",
     "@babel/runtime-corejs3": "^7.12.5",
-    "@hsb/vue": "git+https://lindingfeng:wsjj003.@github.com/lindingfeng/hsb_vue.git",
+    "@hsb/vue": "git+http://release:P3QpfySsS6lFYN4HPGnU@gitlab.huishoubao.com/web_team/public/hsb_vue.git#v0.3.2",
     "axios": "^0.21.0",
     "better-scroll": "^2.0.5",
     "clipboard": "^2.0.6",
@@ -65,6 +65,7 @@
     "vuex": "3.5.1"
   },
   "devDependencies": {
+    "hsb-devops-move": "git+http://release:P3QpfySsS6lFYN4HPGnU@gitlab.huishoubao.com/web_team/ziyou/hsb-devops-move.git#v1.2.0",
     "babel-plugin-component": "^1.1.1",
     "babel-plugin-import": "^1.13.1",
     "babel-plugin-lodash": "^3.3.4",
